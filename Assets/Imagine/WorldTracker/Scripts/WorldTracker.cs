@@ -375,10 +375,10 @@ namespace Imagine.WebAR
                 g.gameObject.SetActive(false);
             }
 
-            StartCoroutine(WaitAndInvoke(0.25f, ()=>{
-                //Billboard the object to always face the camera
-                mainObject.transform.LookAt(new Vector3(trackerCamera.transform.position.x, 0, trackerCamera.transform.position.z), Vector3.up);
-            }));
+            // StartCoroutine(WaitAndInvoke(0.25f, ()=>{
+            //     //Billboard the object to always face the camera
+            //     mainObject.transform.LookAt(new Vector3(trackerCamera.transform.position.x, 0, trackerCamera.transform.position.z), Vector3.up);
+            // }));
 
             trackerCamPos = origPos;
             trackerCamRot = origRot;
